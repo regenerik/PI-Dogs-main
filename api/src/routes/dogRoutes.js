@@ -4,7 +4,7 @@ const { buscaRazas, buscaPorId, apiPlusDb} = require('../controllers/dogControll
 
 
 
-//1 y 2 -  /dogs y /dogs?query=ok
+//1 y 2 -  /dogs y /dogs?name=matias
 router.get("/",async(req,res)=>{
 
     const { name } = req.query;
@@ -40,8 +40,6 @@ router.get("/:id", async(req,res)=>{
 })
 
 //4º -- En Ruta de Temperamentos. :D
-
-//traer los perris
 
 
 module.exports = router;

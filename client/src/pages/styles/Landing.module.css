@@ -2,9 +2,10 @@
     width: 100%;
     height: 100vh;
 
-    background-image: url("../../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url("../img/fondolanding.jpg");
+    
 
     display: flex;
     flex-direction: column;
@@ -15,18 +16,7 @@
 }
 
 
-.boton{
-    padding: 3rem;
-    cursor: pointer;
-    border-radius: 5%;
-    box-shadow: 5px 5px 21px 5px #000;
-    font-size: 2rem;
-    background-color: red;
-    color:white
-    
-}
-
-.boton:hover{
-    background-color: darkgrey;
-    color: yellow
+.ingresar{
+    width: 100%;
+    height: 70%;
 }

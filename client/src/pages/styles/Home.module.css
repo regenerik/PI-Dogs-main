@@ -1,0 +1,67 @@
+.homeCompleto {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("../img/backhome.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding-top: 30px;
+}
+.paginado{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.prevBtn{
+    margin-right: 15px;
+}
+.nextBtn{
+    margin-left: 15px;
+}
+
+.loading{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #64c6fb;
+    gap: 20px;
+
+    padding-top: 30px;
+}
+
+.gif{
+    size: 100%;
+}
+
+.currentPage{
+    width: 30px;
+    height: 30px;
+    padding: 5px 5px 5px 5px;
+    font-size: 15px;
+    background-color: gray;
+    border-radius: 100%;
+    border: 2px;
+    border-color:  black;
+}
+
+.currentPage2{
+
+    width: 30px;
+    height: 30px;
+    padding: 5px 5px 5px 5px;
+    font-size: 15px;
+    border-radius: 50%;
+    border: 5px;
+    border-color:  black;
+}

@@ -124,6 +124,70 @@ const apiPlusDb = async()=>{
     }
 }
 
+//FILTER MIX CONTROLLERS
+
+//1
+const ttfFunction = async()=>{
+    try{
+        
+    }catch(err){
+        console.log(err)
+    }
+}
+
+//2
+const tttFunction = async()=>{
+    try{
+        
+    }catch(err){
+        console.log(err)
+    }
+}
+
+//3
+const fffFunction = async()=>{
+    try{
+        
+    }catch(err){
+        console.log(err)
+    }
+}
+
+//4
+const fftFunction = async()=>{
+    try{
+        
+    }catch(err){
+        console.log(err)
+    }
+}
+
+//5
+const fttFunction = async()=>{
+    try{
+        
+    }catch(err){
+        console.log(err)
+    }
+}
+
+//6
+const ftfFunction = async()=>{
+    try{
+        
+    }catch(err){
+        console.log(err)
+    }
+}
+
+//7
+const tftFunction = async()=>{
+    try{
+        
+    }catch(err){
+        console.log(err)
+    }
+}
 
 
 
@@ -134,4 +198,12 @@ module.exports={
     objetosPerritos,
     buscaPorId,
     apiPlusDb,
+
+    ttfFunction,
+    tttFunction,
+    fffFunction,
+    fftFunction,
+    fttFunction,
+    ftfFunction,
+    tftFunction
 }

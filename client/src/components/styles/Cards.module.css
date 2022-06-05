@@ -1,0 +1,16 @@
+.cardsContenedor{
+    
+    display: grid;
+    position: relative;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    grid-template-rows: 50% 50%;
+    grid-gap:40px;
+    padding: 10px 10px 30px 30px;
+    width: 98%;
+    height:100%;
+
+
+
+}
