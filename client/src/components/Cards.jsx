@@ -8,7 +8,9 @@ const Cards = ({listDogs}) => {
       { listDogs &&
           listDogs.map((e)=> {
             return (
-              <Card name={e.name} image={e.image}/>
+              <div key={e.id}>
+                <Card name={e.name} image={e.image} id={e.id} temperament={e.temperament} weight={e.weight}/>
+              </div>
             )
           })
       }

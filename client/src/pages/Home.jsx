@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getDogs } from "../redux/actions";
+import { getDogs, getTemperaments } from "../redux/actions";
 import Cards from "../components/Cards";
 import style from "./styles/Home.module.css";
 import Header from "../components/Header";
@@ -12,6 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(getDogs());
+    dispatch(getTemperaments())
   }, [dispatch]);
 
   /** Inicio del Paginado **/
@@ -29,7 +30,7 @@ const Home = () => {
     numeroDePaginas.push(i);
   }
 
-  /** Funciones  */
+  /** Funciones/Handlers  */
 
   const nextPage = () => {
     if (currentPage >= Math.ceil(allDogs.length / pageSize)) return;
@@ -49,7 +50,7 @@ const Home = () => {
     <div>
       {allDogs.length > 0 ? (
         <div className={style.homeCompleto}>
-          <Header />
+          <Header setCurrentPage={setCurrentPage}/>
           <div className={style.paginado}>
             <div>
               <button className={style.prevBtn} onClick={prevPage}>
