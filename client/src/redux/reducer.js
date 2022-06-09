@@ -104,7 +104,7 @@ function reducer(state= initialState, {type,payload}){
         case "CLEANER":
             return{
                 ...state,
-                detalles: payload
+                unPerrito: {}
             };
 
         case "FILTER_CREATED":
@@ -123,7 +123,7 @@ function reducer(state= initialState, {type,payload}){
         case "SEARCH_BAR" :
             let perrosParaSearch = [...state.perrosNM ]
             let resultado = perrosParaSearch.filter(e=> (e.name.toLowerCase()).includes(payload.toString().toLowerCase()))
-            if(resultado){
+            if(resultado.length > 0){
                 return{
                     ...state,
                     perros: resultado

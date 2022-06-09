@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom'
 
 const Card = ({name , image, id, temperament, weight}) => {
     return(
-
-        <div className={style.card} key={id}>
-            <Link to={`/detail/${id}`}>
+        <div className={style.card}>
+            <Link to={`/detail/${id}`} className={style.linkCard}>
                 <div className={style.titleContainer}>
                     <h2 className={style.title}>{name}</h2>
                     <h6>{`Temperamentos: ${temperament}`}</h6>

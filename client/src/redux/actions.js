@@ -65,16 +65,9 @@ export function detailPerrito(id){
 }
 
 export const cleaner = () => {
-    return function(dispatch){
-        try{
-            return dispatch({
-                type: "CLEANER",
-                payload: []
-            })
-        } catch(err){
-            console.log(err)
-        }
-    }
+    return({
+            type: "CLEANER",  
+        })
 }
 
 export const filterByCreated = (payload) => {
@@ -100,5 +93,17 @@ export const searchBarFilter = (payload) => {
         }catch(err){
             console.log(err)
         }
+    }
+}
+
+export const uploadNewDog = (payload) => {
+    return async function (dispatch) {
+        try{
+            let postCall = await axios.post(`http://localhost:3001/dog`, payload);
+            return postCall
+        }catch(err){
+            console.log(err)
+        }
+
     }
 }
