@@ -4,9 +4,6 @@
 
 # My individual proyect - Henry Dogs
 
-<p align="left">
-  <img height="200" src="./dog.png" />
-</p>
 
 ## Objetivos del Proyecto
 
@@ -15,8 +12,6 @@
 - Aprender mejores prácticas.
 - Aprender y practicar el workflow de GIT.
 - Usar y practicar testing.
-
-## Horarios y Fechas
 
 
 __IMPORTANTE:__ Es necesario contar minimamente con la última versión estable de Node y NPM. Asegurarse de contar con ella para poder instalar correctamente las dependecias necesarias para correr el proyecto.
